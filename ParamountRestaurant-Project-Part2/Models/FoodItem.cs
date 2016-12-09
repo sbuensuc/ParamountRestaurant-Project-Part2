@@ -19,7 +19,7 @@ namespace ParamountRestaurant_Project_Part2.Models
         public string Description { get; set; }
 
         [Column(TypeName = "numeric")]
-        public decimal? Price { get; set; }
+        public decimal Price { get; set; }
 
         [Required]
         [StringLength(50)]
