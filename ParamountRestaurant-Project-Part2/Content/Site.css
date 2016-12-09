@@ -89,6 +89,8 @@ html{
     overflow: hidden; 
 }
 
+
+
 /*Homepage CSS*/
 
 .gallery_container {
@@ -153,6 +155,7 @@ html{
     color: white;
     margin-bottom: -99999px;
     padding-bottom: 99999px;
+    text-align:center;
 
 }
 
@@ -160,7 +163,7 @@ html{
 
 .details {
     background-color:dimgrey;
-    width: 100%;
+    
 }
 
 .details img{
@@ -171,8 +174,6 @@ html{
 .descriptDetails {
     color: white;
     margin-top: 20px;
-    margin-bottom:20px;
-    padding-bottom:20px;
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

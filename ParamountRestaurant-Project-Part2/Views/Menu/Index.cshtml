@@ -6,7 +6,7 @@
 @using ParamountRestaurant_Project_Part2.Models
 @model IEnumerable<FoodItem>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Menu";
 }
 <div>
     <h1>Menu</h1>
@@ -16,9 +16,7 @@
 @*Each fooditem is seperated into their individual menus using type from database*@
 
 <h3>Appetizers</h3>
-<div class="container">
-    <div class="row">
-        <div class="col-md-8">
+<div class="container-fluid">
             @foreach (FoodItem item in Model)
             {
                 string imagepath = item.FoodId + ".png";
@@ -36,7 +34,7 @@
                             @item.Description
                         </div>
                     </div>
-                    <div class="pricediv col-md-1 fill">
+                    <div class="pricediv col-md-2 fill">
                         $@item.Price
                 </div>
             </div>
@@ -45,12 +43,8 @@
 
 
         </div>
-    </div>
-</div>
 <h3>Entrees</h3>
-<div class="container">
-    <div class="row">
-        <div class="col-md-8">
+<div class="container-fluid">
             @foreach (FoodItem item in Model)
             {
                 string imagepath = item.FoodId + ".png";
@@ -68,7 +62,7 @@
                                 @item.Description
                             </div>
                         </div>
-                        <div class="pricediv col-md-1 fill">
+                        <div class="pricediv col-md-2 fill">
                             $@item.Price
                         </div>
                     </div>
@@ -77,12 +71,9 @@
 
 
         </div>
-    </div>
-</div>
+
 <h3>Desserts</h3>
-<div class="container">
-    <div class="row">
-        <div class="col-md-8">
+<div class="container-fluid">
             @foreach (FoodItem item in Model)
                         {
                             string imagepath = item.FoodId + ".png";
@@ -100,7 +91,7 @@
                                 @item.Description
                             </div>
                         </div>
-                        <div class="pricediv col-md-1 fill">
+                        <div class="pricediv col-md-2 fill">
                             $@item.Price
                         </div>
                     </div>
@@ -109,7 +100,6 @@
 
 
         </div>
-    </div>
-</div>
+
 <div class="botdiv"></div>
 
