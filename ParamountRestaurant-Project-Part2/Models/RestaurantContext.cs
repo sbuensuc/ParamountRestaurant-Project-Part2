@@ -14,6 +14,11 @@ namespace ParamountRestaurant_Project_Part2.Models
 
         public virtual DbSet<FoodItem> FoodItems { get; set; }
 
+        //Added Features - Shopping cart and checkout
+        public virtual DbSet<Cart> Carts { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
+        public virtual DbSet<OrderDetail> OrderDetails { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<FoodItem>()
