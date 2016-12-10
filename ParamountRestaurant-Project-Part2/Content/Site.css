@@ -202,3 +202,69 @@ html{
     width: 100%;
     height:auto;
 }
+
+/*Cart CSS*/
+.RemoveLink {
+    float: right;
+}
+
+#cartItems {
+   text-align: center; 
+   margin-left: auto;
+   margin-right: auto;
+   width: 700px; 
+}
+
+#cartItems td {
+    width: 100px;
+    
+}
+
+#cartItems th{
+    text-align: center;
+}
+
+#cart-total {
+    padding-top: 30px;
+    text-align: right;
+}
+
+.button{
+    text-align: right;
+}
+
+/*About CSS*/
+#aboutBlurb{
+    text-align: center;
+    font-size: 16px;
+}
+#awards{
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 50px;
+    width: 940px;
+}
+#awards img {
+    width: 200px;
+    height: 180px; 
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#reviews {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+#reviews p {
+    padding-left: 25px;
+    font-family: 'Yellowtail', cursive;
+    font-size: 30px;
+    text-align: left;
+}
+
+#reviews h4 {
+    text-align: right;
+    padding-right: 25px;
+}

@@ -203,6 +203,9 @@
     <Content Include="Assets\Images\7.png" />
     <Content Include="Assets\Images\8.png" />
     <Content Include="Assets\Images\9.png" />
+    <Content Include="Assets\Images\award1.png" />
+    <Content Include="Assets\Images\award2.png" />
+    <Content Include="Assets\Images\award3.png" />
     <Content Include="Assets\Images\facebook.png" />
     <Content Include="Assets\Images\gallery1.png" />
     <Content Include="Assets\Images\gallery2.png" />

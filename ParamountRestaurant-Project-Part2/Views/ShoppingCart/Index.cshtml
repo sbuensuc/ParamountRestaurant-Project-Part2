@@ -12,12 +12,11 @@
 <h3>
     <em>Review</em> your cart:
 </h3>
-<p class="button">
-    @Html.ActionLink("Checkout >> ", "AddressAndPayment", "Checkout")
-</p>
+
     <div id="update-message">
     </div>
-    <table>
+   <div>
+    <table id="cartItems">
         <tr>
             <th>
                 Item
@@ -31,7 +30,7 @@
             <th></th>
         </tr>
         @foreach (var item in
-                Model.CartItems)
+                    Model.CartItems)
         {
             <tr id="row-@item.RecordId">
                 <td>
@@ -44,18 +43,18 @@
                     @item.Count
                 </td>
                 <td>
-                    <a href="#" class="RemoveLink" data-id="@item.RecordId"> Remove from cart </a>
+                    <a href="#" class="RemoveLink" data-id="@item.RecordId"> X Remove from cart</a>
                 </td>
             </tr>
         }
-        <tr>
-            <td>
-                Total
-            </td>
-            <td></td>
-            <td></td>
-            <td id="cart-total">
-                @Model.CartTotal
-            </td>
-        </tr>
+
+       
     </table>
+       <div id="cart-total">
+           <h3>Total: $ @Model.CartTotal</h3>
+       </div>
+       <p class="button">
+           @Html.ActionLink("Checkout >> ", "AddressAndPayment", "Checkout")
+       </p>
+</div>
+    
